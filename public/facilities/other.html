@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Facilities - Pioneer Hostel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../images/logo.jpg">
+    <style>
+        .facility-header {
+            height: 80vh;
+            background:
+                url('../images/hostel.jpg') center center/cover no-repeat,
+                url('../images/facilities.jpg') center center/cover no-repeat;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light-text);
+            padding-top: 80px;
+        }
+
+        .facility-content {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .facility-section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .facility-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-card {
+            background: var(--background-light);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .meal-schedule {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+        }
+
+        .meal-schedule th,
+        .meal-schedule td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .meal-schedule th {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        .meal-schedule tr:nth-child(even) {
+            background-color: var(--background-light);
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-card h3 i {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .price-list {
+            width: 100%;
+            margin-top: 1rem;
+            border-collapse: collapse;
+        }
+
+        .price-list th,
+        .price-list td {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .price-list th {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+
+        .gallery-section {
+            margin: 4rem 0;
+            margin-top: 2.5rem;
+        }
+
+        .facility-section .gallery-grid {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+        @media (max-width: 600px) {
+            .facility-section .gallery-grid {
+                grid-auto-flow: row;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="Pioneer Hostel" class="nav-logo">
+            <p class="slogan">Feel Like Home</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#facilities">Facilities</a></li>
+            <li><a href="../index.html#gallery">Gallery</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="facility-header">
+        <div class="hero-content">
+            <h1>Additional Facilities</h1>
+            <p>Making your stay comfortable and secure</p>
+        </div>
+    </header>
+
+    <main class="facility-content">
+        <div class="facility-section">
+            <h2>24/7 Security & Attendance</h2>
+            <p>Your safety is our top priority. We maintain a comprehensive security system with round-the-clock surveillance and professional security staff.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>CCTV Surveillance</h3>
+                    <p>24/7 monitoring of all common areas and entry/exit points</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Security Staff</h3>
+                    <p>Professional security personnel on duty at all times</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Access Control</h3>
+                    <p>Biometric entry system for enhanced security</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Attendance System</h3>
+                    <p>Digital attendance tracking for all residents</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facility-section">
+            <h2>Transport Facility</h2>
+            <p>Our hostel provides convenient and safe transport options for all residents. Whether you need to commute to college, the city, or nearby locations, our transport services have you covered.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="../images/transport.jpg" alt="Transport" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
+                    <h3>Shuttle Service</h3>
+                    <p>Regular shuttle buses to major city points and colleges</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bus"></i>
+                    <h3>Bus Stops Nearby</h3>
+                    <p>Easy access to public transportation within walking distance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-parking"></i>
+                    <h3>Secure Parking</h3>
+                    <p>Ample and secure parking space for residents' vehicles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facility-section">
+            <h2>Laundry Service</h2>
+            <p>Our professional laundry service ensures your clothes are well taken care of. We offer both regular and express services.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-soap"></i>
+                    <h3>Quality Products</h3>
+                    <p>Premium detergents and fabric softeners</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Timely Service</h3>
+                    <p>Guaranteed delivery times</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe Handling</h3>
+                    <p>Professional care for your clothes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facility-section">
+            <h2>Room Cleaning</h2>
+            <p>We ensure your living space is always clean and hygienic with our regular room cleaning services.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-broom"></i>
+                    <h3>Dusting</h3>
+                    <p>Dusting is done regularly to keep your room allergen-free and tidy.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-soap"></i>
+                    <h3>Mopping</h3>
+                    <p>Mopping is done to ensure your floors are spotless and hygienic.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bath"></i>
+                    <h3>Bathroom Cleaning</h3>
+                    <p>Bathrooms are cleaned thoroughly for your comfort and health.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facility-section">
+            <h2>Mess Facility</h2>
+            <p>Our mess provides residents with healthy, delicious, and hygienically prepared meals every day.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Nutritious Meals</h3>
+                    <p>Balanced and nutritious meals planned by our expert chefs.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Hygienic Food Preparation</h3>
+                    <p>Food is prepared in a clean and sanitized kitchen environment.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Variety in Menu</h3>
+                    <p>Enjoy a diverse menu with different cuisines and special festival meals.</p>
+                </div>
+            </div>
+            <div class="gallery-section">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../images/mess1.jpg" alt="Mess View 1" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../images/mess2.jpg" alt="Mess View 2" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Pioneer Hostel</h3>
+                <p>Feel Like Home</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#facilities">Facilities</a></li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/pioneerhostel?igsh=MWE4ZWFnOXo4MnV2Yw==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pioneer Hostel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

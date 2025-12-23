@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Gym - Pioneer Hostel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../images/logo.jpg">
+    <style>
+        .facility-header {
+            height: 82vh;
+            background: url('../images/gym.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--light-text);
+            padding-top: 80px;
+        }
+
+        .facility-content {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gym-section {
+            margin-bottom: 4rem;
+        }
+
+        .gym-section h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .equipment-card {
+            background: var(--background-light);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .equipment-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .gallery-section {
+            margin: 4rem 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 1024px) {
+            .facility-header {
+                height: 70vh;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .facility-header {
+                height: 55vh;
+                background-attachment: scroll;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .facility-header {
+                height: 45vh;
+            }
+        }
+
+        .membership-plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .plan-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .plan-price {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .plan-features li {
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-features li i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .rules-section {
+            background: var(--background-light);
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 4rem 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .rules-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .rules-section li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .rules-section li:last-child {
+            border-bottom: none;
+        }
+        .rules-section li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="Pioneer Hostel" class="nav-logo">
+            <p class="slogan">Feel Like Home</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#facilities">Facilities</a></li>
+            <li><a href="../index.html#gallery">Gallery</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="facility-header">
+        <div class="hero-content">
+            <h1>Modern Gym</h1>
+            <p>State-of-the-art fitness equipment and professional machines</p>
+        </div>
+    </header>
+
+    <main class="facility-content">
+        <div class="gym-section">
+            <h2>Our Equipment</h2>
+            <p>Our gym is equipped with the latest fitness equipment to help you achieve your fitness goals. From cardio machines to strength training equipment, we have everything you need for a complete workout.</p>
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Cardio Zone</h3>
+                    <ul>
+                        <li>Treadmills</li>
+                        <li>Ellipticals</li>
+                        <li>Exercise Bikes</li>
+                        <li>Rowing Machines</li>
+                    </ul>
+                </div>
+                <div class="equipment-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Strength Training</h3>
+                    <ul>
+                        <li>Free Weights</li>
+                        <li>Weight Machines</li>
+                        <li>Power Racks</li>
+                        <li>Benches</li>
+                    </ul>
+                </div>
+                <div class="equipment-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Functional Training</h3>
+                    <ul>
+                        <li>Resistance Bands</li>
+                        <li>Kettlebells</li>
+                        <li>Medicine Balls</li>
+                        <li>Yoga Mats</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Gym Gallery</h2>
+        <div class="gallery-section">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/gym1.jpg" alt="Gym View 1" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/gym2.jpg" alt="Gym View 2" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/gym3.jpg" alt="Gym View 3" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <video autoplay muted loop playsinline class="gallery-video">
+                        <source src="../videos/gym.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="rules-section">
+            <h2>Rules and Guidelines</h2>
+            <ul>
+                <li>Proper workout attire required</li>
+                <li>Wipe down equipment after use</li>
+                <li>Return weights to their proper place</li>
+                <li>No food in the workout area</li>
+                <li>Bring your own towel</li>
+                <li>Follow machines instructions for safety</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Pioneer Hostel</h3>
+                <p>Feel Like Home</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#facilities">Facilities</a></li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/pioneerhostel?igsh=MWE4ZWFnOXo4MnV2Yw==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pioneer Hostel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
